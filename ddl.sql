@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS consultas (
   id serial PRIMARY KEY,
   paciente_id int NOT NULL REFERENCES pacientes (id),
   motivo varchar NOT NULL,
-  evaluacion jsonb NOT NULL,
+  evaluacion jsonb,
   diagnostico_id int NOT NULL REFERENCES diagnosticos (id)
 );
 
