@@ -17,3 +17,7 @@
 ## Version 4 - Modify nullability
 
 - Changed nullability restrictions on certain fields to match ERD more accurately
+
+## Version 5 - Restrictions
+
+- Added Default values & unique restrictions for relevant tables
