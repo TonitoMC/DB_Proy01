@@ -13,3 +13,7 @@
 ## Version 3 - Modify Relationships
 
 - Modified One-To-Many relationships with Diagnosticos, Tratamientos & Consultas
+
+## Version 4 - Modify nullability
+
+- Changed nullability restrictions on certain fields to match ERD more accurately
