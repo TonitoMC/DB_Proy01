@@ -1,3 +1,6 @@
+-- V1__Initial_schema.sql
+-- Description: Initial DB design
+
 CREATE TABLE IF NOT EXISTS pacientes (
   id serial PRIMARY KEY,
   nombre varchar NOT NULL,
