@@ -74,4 +74,22 @@ VALUES
 (9, 9, 9, 'Cultivo de orina', '2025-03-09', '/archivos/examenes/cultivo_orina_209_1009.pdf'),  
 (10, 10, 10, 'Prueba de coagulación', '2025-03-10', '/archivos/examenes/coagulacion_210_1010.pdf');  
 
+INSERT INTO preguntas (nombre, tipo) VALUES
+('Agudeza visual ojo derecho', 'Numérico'),
+('Agudeza visual ojo izquierdo', 'Numérico'),
+('Presión intraocular (mmHg)', 'Numérico'),
+('Usa lentes', 'Sí/No'),
+('Diagnóstico', 'Texto'),
+('Tratamiento recomendado', 'Texto');
+
+INSERT INTO cuestionarios (nombre, version, activo) 
+VALUES ('Evaluación Oftalmológica', 'v1', TRUE);
+
+INSERT INTO preguntas_cuestionarios (cuestionario_id, pregunta_id, orden) VALUES
+(1, 1, 1),  -- Agudeza visual ojo derecho
+(1, 2, 2),  -- Agudeza visual ojo izquierdo
+(1, 3, 3),  -- Presión intraocular
+(1, 4, 4),  -- Usa lentes
+(1, 5, 5),  -- Diagnóstico
+(1, 6, 6);  -- Tratamiento recomendado
 
