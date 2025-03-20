@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS consultas_preguntas (
 );
 
 ALTER TABLE pacientes
-  DROP COLUMN antecedentes;
+  DROP COLUMN IF EXISTS antecedentes;
 
 ALTER TABLE consultas
-  DROP COLUMN evaluacion;
+  DROP COLUMN IF EXISTS evaluacion;

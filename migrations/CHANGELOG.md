@@ -9,3 +9,7 @@
 - Add tables preguntas, cuestionarios, preguntas_cuestionarios, antecedentes, consultas_preguntas
 
 - Drop column Pacientes -> Antecedentes, Consultas -> Evaluacion
+
+## Version 3 - Modify Relationships
+
+- Modified One-To-Many relationships with Diagnosticos, Tratamientos & Consultas
