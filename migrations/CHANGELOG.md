@@ -31,3 +31,8 @@
 
 - Update preguntas_consultas table
 - Add unique & data size constraints (Only 2 fields for bilateral measurements)
+
+## Version 8 - Final revisions
+
+- Updated types for certain columns
+- Add unique index so only one exam can be active per name

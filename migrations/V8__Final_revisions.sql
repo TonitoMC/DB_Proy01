@@ -12,3 +12,7 @@ ALTER COLUMN frecuencia TYPE INTERVAL USING frecuencia::INTERVAL;
 ALTER TABLE horarios_laborales
   DROP COLUMN IF EXISTS dia_semana,
   ADD COLUMN IF NOT EXISTS dia_semana int not null;
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_cuestionario_unico_activo
+ON cuestionarios (nombre)
+WHERE activo = true;
