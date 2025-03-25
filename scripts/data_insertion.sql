@@ -270,3 +270,40 @@ INSERT INTO citas (paciente_id, nombre, fecha, duracion) VALUES
 (6, 'Control hipermetropía', '2024-01-22 11:30:00', '00:20:00'),
 (7, 'Visión nocturna', '2023-10-11 16:45:00', '00:20:00'),
 (8, 'Ojo rojo recurrente', '2023-12-05 09:00:00', '00:20:00');
+
+INSERT INTO horarios_laborales (dia_semana, hora_apertura, hora_cierre) VALUES
+-- Lunes a Viernes (mañana)
+(1, '09:00:00', '13:00:00'),  -- Lunes
+(2, '09:00:00', '13:00:00'),  -- Martes
+(3, '09:00:00', '13:00:00'),  -- Miércoles
+(4, '09:00:00', '13:00:00'),  -- Jueves
+(5, '09:00:00', '13:00:00'),  -- Viernes
+
+-- Lunes a Viernes (tarde)
+(1, '15:00:00', '18:00:00'),   -- Lunes
+(2, '15:00:00', '18:00:00'),   -- Martes
+(3, '15:00:00', '18:00:00'),   -- Miércoles
+(4, '15:00:00', '18:00:00'),   -- Jueves
+(5, '15:00:00', '18:00:00'),   -- Viernes
+
+-- Sábado (solo mañana)
+(6, '09:00:00', '13:00:00');   -- Sábado
+
+INSERT INTO horarios_especiales (fecha, hora_apertura, hora_cierre) VALUES
+('2024-10-23', '09:00:00', '12:00:00'),
+('2024-12-24', '09:00:00', '13:00:00'),
+('2024-09-16', '15:00:00', '19:00:00'),
+('2024-07-15', '10:00:00', '14:00:00'),
+('2024-11-08', '08:00:00', '12:00:00');
+
+INSERT INTO examenes (paciente_id, consulta_id, tipo, fecha, ruta_archivo) VALUES
+(1, 1, 'Tonometría de aire', '2023-01-15', '/examenes/tonometria_1_20230115.pdf'),
+(1, 3, 'Campo visual 30-2', '2024-02-10', '/examenes/campovisual_1_20240210.pdf'),
+(2, 4, 'Topografía corneal', '2023-03-08', '/examenes/topografia_2_20230308.jpg'),
+(2, 5, 'Test de Schirmer', '2023-09-14', '/examenes/schirmer_2_20230914.pdf'),
+(3, 7, 'Retinografía', '2023-02-20', '/examenes/retino_3_20230220.png'),
+(3, 8, 'OCT macular', '2023-11-30', '/examenes/oct_3_20231130.dcm'),
+(4, 9, 'Topografía corneal Pentacam', '2023-04-12', '/examenes/pentacam_4_20230412.pdf'),
+(5, 12, 'Biomicroscopía anterior', '2024-03-18', '/examenes/biomicro_5_20240318.jpg'),
+(6, 14, 'Retinoscopía', '2024-01-22', '/examenes/retinoscopia_6_20240122.pdf'),
+(7, 15, 'Adaptometría', '2023-10-11', '/examenes/adaptometria_7_20231011.pdf');
