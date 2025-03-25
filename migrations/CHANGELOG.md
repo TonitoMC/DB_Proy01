@@ -26,3 +26,8 @@
 
 - Add tables for users, permissions & logs
 - Add table for contact information of parent / legal tutor, for underage patients
+
+## Version 7 - Improved restrictions
+
+- Update preguntas_consultas table
+- Add unique & data size constraints (Only 2 fields for bilateral measurements)
