@@ -21,3 +21,8 @@
 ## Version 5 - Restrictions
 
 - Added Default values & unique restrictions for relevant tables
+
+## Version 6 - Logs & tutor contact
+
+- Add tables for users, permissions & logs
+- Add table for contact information of parent / legal tutor, for underage patients
