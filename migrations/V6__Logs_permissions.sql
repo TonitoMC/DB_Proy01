@@ -48,6 +48,15 @@ CREATE TABLE IF NOT EXISTS roles_permisos (
   permiso_id int NOT NULL REFERENCES permisos (id)
 );
 
+CREATE TABLE IF NOT EXISTS logs (
+  id serial PRIMARY KEY,
+  usuario_id int NOT NULL REFERENCES usuarios (id),
+  accion varchar NOT NULL,
+  objeto varchar NOT NULL,
+  objeto_id int NOT NULL,
+  fecha_hora timestamp NOT NULL
+);
+
 -- Special date for date-specific time slots
 CREATE TABLE IF NOT EXISTS horarios_especiales (
   id serial PRIMARY KEY,
