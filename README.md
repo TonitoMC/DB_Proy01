@@ -6,7 +6,7 @@ Dentro de este directorio se encuentran los scripts de creación versionados, al
 Dentro de este directorio se encuentran los scripts de inserción de datos y consultas, diseñados para funcionar con la versión más reciente de los scripts de creación
 ### Docs
 Dentro de este directorio se encuentra la documentación de la base de datos, cómo lo son las reglas de negocio y explicaciones de decisiones de diseño.
-## Instrucciones para correr
+## Instrucciones para crear la estructura de la base de datos con Docker
 Ejecutar los siguientes comandos en el directorio root del proyecto
 ```bash
 docker build -t mi-postgres-db .
